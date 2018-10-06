@@ -27,7 +27,7 @@ function showSpeed(video){
     }, 500);
 }
 
-function changeVideoPlaybackRate(videos, value){
+function changeVideoPlaybackRate(value){
     let videos = findPlayingVideo();
     videos.forEach(video => {
         video.playbackRate = video.playbackRate + value;
@@ -38,10 +38,10 @@ function changeVideoPlaybackRate(videos, value){
 
 function shortkeys(event){
     if (event.key === "["){
-        changeVideoPlaybackRate(videos, -0.10);
+        changeVideoPlaybackRate(-0.10);
     }
     if (event.key === "]") {
-        changeVideoPlaybackRate(videos, 0.10);
+        changeVideoPlaybackRate(0.10);
 
     }
 }
