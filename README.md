@@ -2,7 +2,7 @@
 
 Minimal Chrome extension to increase/decrease video playback speed. No permissions required.
 
-<b>BONUS</b>: Allows to skip Youtube adds with a single button click.
+**BONUS**: Allows to skip Youtube adds with a single button click **\\**
 
 Installation:
  * Enable developer mode in Chrome extensions menu
