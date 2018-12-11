@@ -36,13 +36,23 @@ function changeVideoPlaybackRate(value){
     return videos;
 }
 
+function skip_ad_video(){
+    let videos = findPlayingVideo();
+    videos.forEach(video => {
+        video.currentTime = video.duration - 1;
+    });
+    return videos;
+}
+
 function shortkeys(event){
     if (event.key === "["){
         changeVideoPlaybackRate(-0.10);
     }
     if (event.key === "]") {
         changeVideoPlaybackRate(0.10);
-
+    }
+    if (event.key === "\\") {
+        skip_ad_video();
     }
 }
 
