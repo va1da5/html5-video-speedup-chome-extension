@@ -1,12 +1,12 @@
 {
-    "manifest_version": 2,
+    "manifest_version": 3,
     "name": "Video Playback Speedup",
     "description": "Control video playback speed using keyboard shortcuts",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "icons": {
         "128": "images/icon-128.png"
     },
-    "browser_action": {
+    "action": {
         "default_icon": "images/icon-90.png",
         "default_popup": "popup.html"
     },
@@ -15,10 +15,11 @@
             "matches": [
                 "<all_urls>"
             ],
-            "js": ["scripts/content.js"],
+            "js": [
+                "scripts/content.js"
+            ],
             "all_frames": true
         }
-
     ],
     "permissions": []
 }
